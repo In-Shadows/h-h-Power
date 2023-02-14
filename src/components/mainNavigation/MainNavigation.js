@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import { RiMenu3Line } from "react-icons/ri";
 
 import "./mainNavigation.scss";
 import Logo from "../../assets/logo.png";
