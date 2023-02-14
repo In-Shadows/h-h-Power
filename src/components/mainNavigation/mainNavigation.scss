@@ -1,0 +1,57 @@
+@import "../../variables.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+
+  &__logo-container {
+    img {
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+
+  .navigation {
+    &__list {
+      list-style: none;
+
+      display: flex;
+      gap: 6rem;
+    }
+
+    &__list__item {
+    }
+
+    &__link:link,
+    &__link:visited {
+      text-decoration: none;
+      color: $color-text;
+      transition: all 0.3s;
+
+      position: relative;
+    }
+
+    &__link:hover,
+    &__link:active {
+      color: $color-black;
+
+      &::before {
+        width: 100%;
+      }
+    }
+
+    &__link::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      height: 4px;
+      width: 0;
+      transition: all 0.3s;
+      background-image: $gradient-link;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@import "../../variables.scss";
+
+.hero-section {
+  margin-bottom: 30rem;
+
+  &__bg-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+
+    opacity: 0.18;
+  }
+
+  &__bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__heading {
+    margin-bottom: 5rem;
+  }
+
+  &__content {
+    height: 55vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__info {
+    display: flex;
+    align-items: flex-start;
+  }
+  &__location {
+    display: flex;
+    align-items: flex-start;
+    &-icon {
+      margin-right: 1.5rem;
+    }
+
+    &-text {
+      color: $color-text;
+      width: 60%;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+
+    margin-left: -15rem;
+
+    &-icon {
+      margin-right: 1.5rem;
+    }
+
+    &-text {
+      color: $color-text;
+    }
+  }
+}
