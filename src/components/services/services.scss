@@ -1,5 +1,5 @@
 .MEP {
-  padding: 0 3rem;
+  padding: 0 4rem;
 
   &__heading {
     margin-bottom: 5rem;
@@ -8,13 +8,21 @@
 
   &-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
     gap: 4rem;
 
     margin-bottom: 15rem !important;
+
+    @media only screen and (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &-content__text {
+    @media only screen and(max-width: 600px) {
+      text-align: center;
+    }
+
     &-1 {
       display: inline-block;
       margin-bottom: 3rem;
@@ -22,6 +30,10 @@
   }
 
   &-content__img {
+    @media only screen and(max-width: 1000px) {
+      grid-row: 1;
+    }
+
     img {
       width: 100%;
       height: 100%;
@@ -36,28 +48,48 @@
   &__electrical {
     p {
       margin-bottom: 2rem;
+
+      @media only screen and(max-width: 600px) {
+        text-align: center;
+      }
     }
   }
 
   &__hvac {
     p {
       margin-bottom: 2rem;
+
+      @media only screen and(max-width: 600px) {
+        text-align: center;
+      }
     }
   }
 
   &__plumbing {
     p {
       margin-bottom: 2rem;
+
+      @media only screen and(max-width: 600px) {
+        text-align: center;
+      }
     }
   }
 
   &__firefighting {
     p {
       margin-bottom: 2rem;
+
+      @media only screen and(max-width: 600px) {
+        text-align: center;
+      }
     }
   }
 
   .list {
     margin-left: 4rem;
+
+    @media only screen and(max-width: 600px) {
+      margin-left: 6rem;
+    }
   }
 }
