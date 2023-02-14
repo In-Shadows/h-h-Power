@@ -2,7 +2,6 @@ import React from "react";
 import { GoLocation } from "react-icons/go";
 import { BsFillTelephoneFill } from "react-icons/bs";
 
-import MainNavigation from "../mainNavigation/MainNavigation";
 import videoWebm from "../../assets/video.webm";
 import videoMP4 from "../../assets/video.mp4";
 import "./heroSection.scss";
