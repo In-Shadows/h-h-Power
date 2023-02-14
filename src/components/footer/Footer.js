@@ -7,6 +7,7 @@ import { AiFillLinkedin } from "react-icons/ai";
 
 import "./footer.scss";
 import Logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const style = { color: "#fff", fontSize: "3rem" };
@@ -38,39 +39,39 @@ const Footer = () => {
       <nav className="footer__navigation">
         <ul className="footer__navigation__list">
           <li className="footer__navigation__list-item">
-            <a href="#" className="footer__navigation__link">
+            <Link href="#" className="footer__navigation__link">
               Home
-            </a>
+            </Link>
           </li>
           <li className="footer__navigation__list-item">
-            <a href="#" className="footer__navigation__link">
+            <Link href="#" className="footer__navigation__link">
               About
-            </a>
+            </Link>
           </li>
           <li className="footer__navigation__list-item">
-            <a href="#" className="footer__navigation__link">
+            <Link href="#" className="footer__navigation__link">
               Projects
-            </a>
+            </Link>
           </li>
           <li className="footer__navigation__list-item">
-            <a href="#" className="footer__navigation__link">
+            <Link href="#" className="footer__navigation__link">
               Services
-            </a>
+            </Link>
           </li>
           <li className="footer__navigation__list-item">
-            <a href="#" className="footer__navigation__link">
+            <Link href="#" className="footer__navigation__link">
               Privacy Policy
-            </a>
+            </Link>
           </li>
           <li className="footer__navigation__list-item">
-            <a href="#" className="footer__navigation__link">
+            <Link href="#" className="footer__navigation__link">
               Terms Of Service
-            </a>
+            </Link>
           </li>
           <li className="footer__navigation__list-item">
-            <a href="#" className="footer__navigation__link">
+            <Link href="#" className="footer__navigation__link">
               Contact Us
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
